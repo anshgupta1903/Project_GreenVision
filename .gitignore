@@ -130,3 +130,12 @@ dmypy.json
 artifact
 .idea
 
+
+# Ignore CatBoost training logs and outputs
+notebooks/catboost_info/
+
+# Ignore pickle/model files
+*.pkl
+
+# Ignore Jupyter notebook checkpoints
+.ipynb_checkpoints/
