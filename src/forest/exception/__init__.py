@@ -5,7 +5,7 @@ def error_message_detail(error, error_detail):
     try:
         _,_,exc_tb = error_detail.exc_info() 
 
-        if exe_tb is None:
+        if exc_tb is None:
             return f"Error occured: {str(error)}"
         
         file_name = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
