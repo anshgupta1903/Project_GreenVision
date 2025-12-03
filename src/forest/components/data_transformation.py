@@ -1,14 +1,14 @@
 import sys 
 import numpy as np
 import pandas as pd
-from sklean.impute import SimpleImputer
+from sklearn.impute import SimpleImputer
 from sklearn.pipeline import Pipeline
 from src.forest.constant import *
 from src.forest.exception import ForestException
 from src.forest.logger import logging
 from src.forest.utils import save_object, save_numpy_array_data, read_yaml_file
 from sklearn.impute import StandardScaler
-from sklean.compose import ColumnTransformer
+from sklearn.compose import ColumnTransformer
 from src.forest.constant.training_pipeline import TARGET_COLUMN, SCHEMA_FILE_PATH
 from src.forest.entity.config_entity import DataTransformationConfig
 from src.forest.entity.artifact_entity import DataIngestionArtifact, DataTransformationArtifact
